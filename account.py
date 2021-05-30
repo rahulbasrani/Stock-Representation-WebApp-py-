@@ -3,6 +3,7 @@ import pandas as pd
 from streamlit import caching
 import psycopg2
 from StockWebApp import *
+
 # Security
 # passlib,hashlib,bcrypt,scrypt
 

@@ -46,31 +46,11 @@ def get_company_name(symbol):
         return Company[symbol]
     else:
         'None'
-    # if symbol=="AMAZON":
-    #     return "AMZN"
-    # elif symbol=="TESLA":
-    #     return "TSLA"
-    # elif symbol=="GOOGLE":
-    #     return "GOOG"
-    # elif symbol=="APPLE":
-    #     return "AAPL"
-    # else:
-    #     'None'
 
 # fun for proper company name and proper date
 def get_data(symbol, start, end):
     path_out= "D:/python project/Stock-Representation-WebApp-py-/Stocks/"
     df=pd.read_csv(path_out+symbol+'.csv')
-    # if symbol.upper()=='AMAZON':
-    #     df= pd.read_csv("D:/python project/Stock-Representation-WebApp-py-/Stocks/AMZN.csv")
-    # elif symbol.upper()=='TESLA':
-    #     df= pd.read_csv("D:/python project/Stock-Representation-WebApp-py-/Stocks/TSLA.csv")
-    # elif symbol.upper()=='GOOGLE':
-    #     df= pd.read_csv("D:/python project/Stock-Representation-WebApp-py-/Stocks/GOOG.csv")
-    # elif symbol.upper()=='APPLE':
-    #     df= pd.read_csv("D:/python project/Stock-Representation-WebApp-py-/Stocks/AAPL.csv")
-    # else:
-    #     df= pd.DataFrame(columns=['Date','Open','High','Low','Close','Adj Close','Volume'])
 
     # Get the data range
     start=pd.to_datetime(start)
